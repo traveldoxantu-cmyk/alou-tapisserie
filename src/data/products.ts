@@ -1,0 +1,38 @@
+export const products = [
+  {
+    id: 'salon-oasis',
+    category: 'Salon',
+    title: 'SALON OASIS',
+    subtitle: 'CANAPÉ 3 PLACES + 2 FAUTEUILS',
+    price: '650 000 FCFA',
+    badge: 'BEST-SELLER',
+    image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=2070&auto=format&fit=crop',
+  },
+  {
+    id: 'lit-royal',
+    category: 'Lit',
+    title: 'LIT ROYAL',
+    subtitle: 'TÊTE DE LIT CAPITONNÉE 180CM',
+    price: '450 000 FCFA',
+    badge: 'NOUVEAU',
+    image: 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?q=80&w=2070&auto=format&fit=crop',
+  },
+  {
+    id: 'fauteuil-velours',
+    category: 'Fauteuil',
+    title: 'FAUTEUIL VELOURS',
+    subtitle: 'COLLECTION ÉMERAUDE',
+    price: '280 000 FCFA',
+    badge: null,
+    image: 'https://images.unsplash.com/photo-1631679706909-1844bbd07221?q=80&w=1992&auto=format&fit=crop',
+  },
+  {
+    id: 'pouf-boucle',
+    category: 'Pouf',
+    title: 'POUF BOUCLÉ',
+    subtitle: 'OTTOMAN ROND XL',
+    price: '120 000 FCFA',
+    badge: null,
+    image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2000&auto=format&fit=crop',
+  },
+];

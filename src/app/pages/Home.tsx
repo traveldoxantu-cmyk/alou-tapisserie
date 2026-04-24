@@ -1,9 +1,12 @@
-import React from 'react';
 import { Header } from '../components/Header';
 import { Hero } from '../components/Hero';
-import { Engagement } from '../components/Engagement';
+import { Features } from '../components/Features';
+import { Categories } from '../components/Categories';
+import { BestSellers } from '../components/BestSellers';
+import { OurStory } from '../components/OurStory';
 import { Services } from '../components/Services';
-import { Collections } from '../components/Collections';
+import { Process } from '../components/Process';
+import { Engagement } from '../components/Engagement';
 import { Testimonials } from '../components/Testimonials';
 import { QuoteForm } from '../components/QuoteForm';
 import { Footer } from '../components/Footer';
@@ -16,9 +19,13 @@ export const Home = () => {
       <Toaster position="top-center" expand={true} richColors />
       <Header />
       <Hero />
-      <Engagement />
+      <Features />
+      <Categories />
+      <BestSellers />
+      <OurStory />
       <Services />
-      <Collections />
+      <Process />
+      <Engagement />
       <Testimonials />
       <QuoteForm />
       <Footer />

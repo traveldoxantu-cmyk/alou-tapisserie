@@ -23,8 +23,8 @@ export const QuoteForm = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 relative z-10">
             <div>
               <h2 className="text-5xl md:text-7xl font-serif text-white mb-8 leading-tight">
-                Commençons <br />
-                <span className="italic font-light text-[#E5E1DA]">votre projet.</span>
+                Votre projet, <br />
+                <span className="italic font-light text-[#E5E1DA]">notre priorité.</span>
               </h2>
               <p className="text-[#E5E1DA]/60 text-lg mb-12 max-w-sm leading-relaxed">
                 Une idée, un besoin ? Nos experts vous accompagnent pour transformer votre intérieur avec excellence.
@@ -62,9 +62,34 @@ export const QuoteForm = () => {
                   <label className="text-[10px] font-bold tracking-widest text-[#E5E1DA]/40 uppercase block mb-2">Adresse Email</label>
                   <input
                     {...register('email', { required: true })}
+                    type="email"
                     className="w-full bg-transparent border-b border-white/10 py-3 text-white placeholder:text-white/20 focus:outline-none focus:border-white transition-all font-serif text-xl"
                     placeholder="email@exemple.com"
                   />
+                </div>
+                <div className="group">
+                  <label className="text-[10px] font-bold tracking-widest text-[#E5E1DA]/40 uppercase block mb-2">Téléphone (Optionnel)</label>
+                  <input
+                    {...register('phone')}
+                    className="w-full bg-transparent border-b border-white/10 py-3 text-white placeholder:text-white/20 focus:outline-none focus:border-white transition-all font-serif text-xl"
+                    placeholder="+221 -- --- -- --"
+                  />
+                </div>
+                <div className="group">
+                  <label className="text-[10px] font-bold tracking-widest text-[#E5E1DA]/40 uppercase block mb-2">Type de meuble</label>
+                  <select
+                    {...register('furnitureType', { required: true })}
+                    className="w-full bg-[#331D19] border-b border-white/10 py-3 text-white focus:outline-none focus:border-white transition-all font-serif text-xl cursor-pointer"
+                  >
+                    <option value="" disabled selected>Sélectionnez un type</option>
+                    <option value="Salon complet">Salon complet</option>
+                    <option value="Canapé seul">Canapé seul</option>
+                    <option value="Lit / Tête de lit">Lit / Tête de lit</option>
+                    <option value="Fauteuil">Fauteuil</option>
+                    <option value="Pouf">Pouf</option>
+                    <option value="Restauration">Restauration</option>
+                    <option value="Autre">Autre</option>
+                  </select>
                 </div>
                 <div className="group">
                   <label className="text-[10px] font-bold tracking-widest text-[#E5E1DA]/40 uppercase block mb-2">Message</label>

@@ -18,7 +18,7 @@ export const Header = () => {
   const navLinks = [
     { name: 'ACCUEIL', href: '#' },
     { name: 'COLLECTION', href: '#collections' },
-    { name: 'ENGAGEMENT', href: '#engagement' },
+    { name: 'SERVICES', href: '#services' },
     { name: 'TÉMOIGNAGES', href: '#testimonials' },
     { name: 'CONTACT', href: '#contact' },
   ];
@@ -61,26 +61,17 @@ export const Header = () => {
         </nav>
 
         {/* Right: Actions */}
-        <div className="flex-1 hidden lg:flex items-center justify-end gap-4">
-          <button 
-            className={`px-10 py-3 rounded-full text-[10px] font-bold tracking-[0.2em] transition-all uppercase border ${
+        <div className="flex-1 hidden lg:flex items-center justify-end">
+          <a 
+            href="#contact"
+            className={`px-8 py-3 rounded-full text-[10px] font-bold tracking-[0.2em] transition-all uppercase border ${
               isScrolled 
                 ? 'border-[#331D19] text-[#331D19] hover:bg-[#331D19] hover:text-white' 
-                : 'border-white/30 text-white hover:bg-white hover:text-[#331D19]'
+                : 'border-white/40 text-white hover:bg-white hover:text-[#331D19]'
             }`}
           >
-            Connexion
-          </button>
-          <button 
-            className={`w-11 h-11 flex items-center justify-center rounded-full transition-all relative ${
-              isScrolled ? 'bg-[#F2EEE8] text-[#331D19]' : 'bg-white/10 text-white hover:bg-white/20'
-            }`}
-          >
-            <ShoppingBag size={18} />
-            <span className={`absolute -top-1 -right-1 w-4 h-4 text-[8px] flex items-center justify-center rounded-full font-bold ${
-              isScrolled ? 'bg-[#331D19] text-white' : 'bg-white text-[#331D19]'
-            }`}>0</span>
-          </button>
+            Demander un devis
+          </a>
         </div>
 
         {/* Mobile Toggle */}
@@ -112,13 +103,14 @@ export const Header = () => {
                   {link.name}
                 </a>
               ))}
-              <div className="flex items-center justify-between mt-6">
-                <button className="px-10 py-4 bg-[#331D19] text-white rounded-full text-xs font-bold uppercase tracking-widest">
-                  Connexion
-                </button>
-                <div className="p-4 bg-[#F2EEE8] rounded-full text-[#331D19]">
-                  <ShoppingBag size={24} />
-                </div>
+              <div className="mt-4">
+                <a 
+                  href="#contact"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="block w-full py-5 bg-[#331D19] text-white rounded-full text-center text-xs font-bold uppercase tracking-widest shadow-xl"
+                >
+                  Demander un devis
+                </a>
               </div>
             </div>
           </motion.div>

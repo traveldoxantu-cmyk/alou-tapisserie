@@ -9,7 +9,7 @@ export const Engagement = () => {
         {/* Section Title */}
         <div className="mb-24">
           <h2 className="text-4xl md:text-6xl font-serif text-[#331D19] uppercase tracking-tight mb-4">
-            Notre Engagement
+            Notre Promesse
           </h2>
           <div className="h-px w-24 bg-[#331D19]/20"></div>
         </div>
@@ -89,21 +89,6 @@ export const Engagement = () => {
           ))}
         </div>
 
-        {/* CTA */}
-        <div className="mt-24 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            <a
-              href="#collections"
-              className="inline-block px-12 py-4 bg-[#331D19] text-white rounded-full text-[10px] font-bold tracking-[0.2em] uppercase hover:bg-[#331D19]/80 transition-all duration-500 shadow-xl"
-            >
-              Découvrir nos créations
-            </a>
-          </motion.div>
-        </div>
       </div>
     </section>
   );

@@ -2,26 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { Sofa, Palette, Sparkles, Ruler } from 'lucide-react';
 
-const services = [
-  {
-    icon: <Sofa className="w-6 h-6" />,
-    title: 'Tapisserie de Luxe',
-    description: 'Restauration et création de pièces uniques avec une précision artisanale.',
-    tag: 'ARTISANAT',
-  },
-  {
-    icon: <Palette className="w-6 h-6" />,
-    title: 'Conseil en Design',
-    description: 'Expertise dans le choix des nuances et des textures pour une harmonie parfaite.',
-    tag: 'DESIGN',
-  },
-  {
-    icon: <Sparkles className="w-6 h-6" />,
-    title: 'Matières Nobles',
-    description: 'Sélection rigoureuse des tissus et cuirs les plus prestigieux du marché.',
-    tag: 'QUALITÉ',
-  },
-];
+import { services } from '../../data/services';
 
 export const Services = () => {
   return (
@@ -38,7 +19,7 @@ export const Services = () => {
               className="group"
             >
               <div className="w-16 h-16 rounded-full bg-[#F2EEE8] flex items-center justify-center text-[#331D19] mb-10 group-hover:bg-[#331D19] group-hover:text-white transition-all duration-700">
-                {service.icon}
+                <service.icon className="w-6 h-6" />
               </div>
               
               <div className="flex items-center gap-3 mb-6">

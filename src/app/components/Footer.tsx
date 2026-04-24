@@ -22,6 +22,7 @@ export const Footer = () => {
           <div className="space-y-4">
             <h4 className="text-sm font-serif uppercase tracking-widest">LIENS UTILES</h4>
             <ul className="space-y-2 text-xs text-white/60">
+              <li><a href="#" className="hover:text-white transition-colors">Livraison au Sénégal</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Conditions Générales</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Politiques de confidentialité</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Livraisons & Retours</a></li>
@@ -33,10 +34,10 @@ export const Footer = () => {
           <div className="space-y-4">
             <h4 className="text-sm font-serif uppercase tracking-widest">À PROPOS</h4>
             <ul className="space-y-2 text-xs text-white/60">
-              <li><a href="#" className="hover:text-white transition-colors">Nos Collections</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Notre Savoir-faire</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Notre Histoire</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Contactez-nous</a></li>
+              <li><a href="#collections" className="hover:text-white transition-colors">Nos Collections</a></li>
+              <li><a href="#process" className="hover:text-white transition-colors">Notre Processus</a></li>
+              <li><a href="#our-story" className="hover:text-white transition-colors">Notre Histoire</a></li>
+              <li><a href="#contact" className="hover:text-white transition-colors">Contactez-nous</a></li>
             </ul>
           </div>
 
@@ -63,12 +64,12 @@ export const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-8 text-[10px] font-bold tracking-[0.2em] text-white/40 uppercase">
           <div className="flex items-center gap-8">
-            <a href="#" className="hover:text-white transition-colors"><Facebook size={18} /></a>
-            <a href="#" className="hover:text-white transition-colors"><Instagram size={18} /></a>
-            <a href="#" className="hover:text-white transition-colors"><Twitter size={18} /></a>
-            <a href="#" className="hover:text-white transition-colors"><Phone size={18} /></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors"><Facebook size={18} /></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors"><Instagram size={18} /></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors"><Twitter size={18} /></a>
+            <a href="https://wa.me/221338000000" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors"><Phone size={18} /></a>
           </div>
-          <p>© 2026, ALOU TAPISSERIE. DESIGNED BY ALOU STUDIO.</p>
+          <p>© {new Date().getFullYear()}, ALOU TAPISSERIE. TOUS DROITS RÉSERVÉS.</p>
         </div>
       </div>
     </footer>

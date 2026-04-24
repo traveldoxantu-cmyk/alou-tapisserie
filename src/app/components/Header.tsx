@@ -40,7 +40,7 @@ export const Header = () => {
             <img 
               src="/assets/logo_principal.png" 
               alt="ALOU" 
-              className="h-10 md:h-16 w-auto"
+              className="h-14 md:h-24 w-auto"
             />
           </Link>
         </div>

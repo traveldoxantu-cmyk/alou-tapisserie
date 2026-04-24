@@ -18,7 +18,8 @@ export const Header = () => {
   const navLinks = [
     { name: 'ACCUEIL', href: '#' },
     { name: 'COLLECTION', href: '#collections' },
-    { name: 'SERVICES', href: '#services' },
+    { name: 'À PROPOS', href: '#our-story' },
+    { name: 'GALERIE', href: '#collections' },
     { name: 'CONTACT', href: '#contact' },
   ];
 
@@ -45,7 +46,7 @@ export const Header = () => {
         </div>
 
         {/* Center: Desktop Nav */}
-        <nav className="hidden lg:flex items-center gap-10">
+        <nav className="hidden lg:flex items-center gap-8">
           {navLinks.map((link) => (
             <a
               key={link.name}
@@ -60,7 +61,16 @@ export const Header = () => {
         </nav>
 
         {/* Right: Actions */}
-        <div className="flex-1 hidden lg:flex items-center justify-end">
+        <div className="flex-1 hidden lg:flex items-center justify-end gap-6">
+          <button 
+            className={`px-8 py-3 rounded-full text-[10px] font-bold tracking-[0.2em] transition-all uppercase border ${
+              isScrolled 
+                ? 'border-[#331D19] text-[#331D19] hover:bg-[#331D19] hover:text-white' 
+                : 'border-white/40 text-white hover:bg-white hover:text-[#331D19]'
+            }`}
+          >
+            Connexion
+          </button>
           <button 
             className={`w-11 h-11 flex items-center justify-center rounded-full transition-all relative ${
               isScrolled ? 'bg-[#F2EEE8] text-[#331D19]' : 'bg-white/10 text-white hover:bg-white/20'
@@ -102,7 +112,13 @@ export const Header = () => {
                   {link.name}
                 </a>
               ))}
-              <div className="mt-4 flex justify-center">
+              <div className="flex items-center justify-between mt-4">
+                <button
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="flex-1 mr-4 py-5 bg-[#331D19] text-white rounded-full text-center text-xs font-bold uppercase tracking-widest shadow-xl"
+                >
+                  Connexion
+                </button>
                 <div className="p-5 bg-[#F2EEE8] rounded-full text-[#331D19] relative">
                   <ShoppingBag size={24} />
                   <span className="absolute top-0 right-0 w-5 h-5 bg-[#331D19] text-white text-[10px] flex items-center justify-center rounded-full font-bold">0</span>

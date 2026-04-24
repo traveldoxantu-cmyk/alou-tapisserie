@@ -14,8 +14,8 @@ export const OurStory = () => {
             className="relative h-[500px] md:h-[700px] rounded-[60px] overflow-hidden shadow-2xl"
           >
             <ImageWithFallback
-              src="/assets/products/sofa_beige_duo.jpg"
-              alt="Notre Atelier"
+              src="/assets/artisan.jpg"
+              alt="Notre Artisan"
               className="w-full h-full object-cover"
             />
             {/* Floating Badge */}

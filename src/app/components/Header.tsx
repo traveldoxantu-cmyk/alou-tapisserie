@@ -28,7 +28,7 @@ export const Header = () => {
       className={`fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-6xl transition-all duration-500`}
     >
       <div 
-        className={`flex items-center justify-between px-10 py-3 rounded-full transition-all duration-500 border ${
+        className={`flex items-center justify-between px-10 py-2 rounded-full transition-all duration-500 border ${
           isScrolled 
             ? 'bg-white shadow-[0_8px_40px_rgba(0,0,0,0.08)] border-white/20' 
             : 'bg-[#F2EEE8]/90 backdrop-blur-xl border-[#331D19]/10'
@@ -40,7 +40,7 @@ export const Header = () => {
             <img 
               src="/assets/logo_principal.png" 
               alt="ALOU" 
-              className="h-14 md:h-24 w-auto"
+              className="h-12 md:h-18 w-auto"
             />
           </Link>
         </div>

@@ -35,22 +35,12 @@ export const Hero = () => {
             transition={{ delay: 0.5, duration: 1 }}
             className="text-white/70 text-xs md:text-sm tracking-[0.15em] uppercase mb-12 max-w-2xl mx-auto"
           >
-            Salons, lits, fauteuils — fabriqués à la main par nos artisans sénégalais.
+            Salons, lits, fauteuils fabriqués à la main par nos artisans sénégalais.
           </motion.p>
           
           {/* Buttons removed as requested */}
         </motion.div>
       </div>
-
-      {/* Scroll Indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 0.6 }}
-        transition={{ delay: 1.5, duration: 1 }}
-        className="absolute bottom-[220px] md:bottom-[260px] left-1/2 -translate-x-1/2 z-30 flex flex-col items-center gap-2"
-      >
-        <ChevronDown className="text-white animate-bounce" size={24} />
-      </motion.div>
 
       {/* Glassmorphic Footer Overlay */}
       <motion.div

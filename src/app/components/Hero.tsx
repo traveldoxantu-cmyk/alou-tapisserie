@@ -1,3 +1,4 @@
+import { motion } from 'motion/react';
 import { ChevronDown } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { stats } from '../../data/stats';

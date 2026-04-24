@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+import { ImageWithFallback } from './figma/ImageWithFallback';
 
 export const OurStory = () => {
   return (
@@ -7,19 +8,16 @@ export const OurStory = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           {/* Image Column */}
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="relative"
+            className="relative h-[500px] md:h-[700px] rounded-[60px] overflow-hidden shadow-2xl"
           >
-            <div className="aspect-[4/5] rounded-[40px] overflow-hidden">
-              <img
-                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=1000&auto=format&fit=crop"
-                alt="Atelier Alou Tapisserie"
-                loading="lazy"
-                className="w-full h-full object-cover"
-              />
-            </div>
+            <ImageWithFallback
+              src="/assets/products/sofa_beige_duo.jpg"
+              alt="Notre Atelier"
+              className="w-full h-full object-cover"
+            />
             {/* Floating Badge */}
             <div className="absolute bottom-10 right-[-20px] md:right-[-40px] bg-[#331D19] text-white rounded-[20px] px-8 py-6 shadow-2xl">
               <div className="font-serif text-2xl mb-1">Fondée en 2014</div>

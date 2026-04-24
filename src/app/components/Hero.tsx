@@ -38,25 +38,7 @@ export const Hero = () => {
             Salons, lits, fauteuils — fabriqués à la main par nos artisans sénégalais.
           </motion.p>
           
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.8, duration: 1 }}
-            className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6"
-          >
-            <a
-              href="#collections"
-              className="w-full md:w-auto px-12 py-4 bg-white text-[#331D19] rounded-full text-[10px] font-bold tracking-[0.2em] uppercase hover:bg-[#F2EEE8] transition-all duration-500 shadow-xl"
-            >
-              Voir nos collections
-            </a>
-            <a
-              href="#contact"
-              className="w-full md:w-auto px-12 py-4 border border-white/30 text-white rounded-full text-[10px] font-bold tracking-[0.2em] uppercase hover:bg-white/10 transition-all duration-500 backdrop-blur-sm"
-            >
-              Demander un devis
-            </a>
-          </motion.div>
+          {/* Buttons removed as requested */}
         </motion.div>
       </div>
 

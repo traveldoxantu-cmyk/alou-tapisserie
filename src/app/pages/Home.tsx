@@ -1,6 +1,5 @@
 import { Header } from '../components/Header';
 import { Hero } from '../components/Hero';
-import { Features } from '../components/Features';
 import { Categories } from '../components/Categories';
 import { BestSellers } from '../components/BestSellers';
 import { OurStory } from '../components/OurStory';
@@ -19,7 +18,6 @@ export const Home = () => {
       <Toaster position="top-center" expand={true} richColors />
       <Header />
       <Hero />
-      <Features />
       <Categories />
       <BestSellers />
       <OurStory />

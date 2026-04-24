@@ -9,9 +9,9 @@ export const Hero = () => {
       {/* Full Background Image */}
       <div className="absolute inset-0 z-0">
         <ImageWithFallback
-          src="/assets/artisan.jpg"
-          alt="Alou Tapisserie Artisan"
-          className="w-full h-full object-cover grayscale-[0.1] contrast-[1.1]"
+          src="/assets/products/sofa_white_boucle.jpg"
+          alt="Alou Tapisserie Showroom"
+          className="w-full h-full object-cover grayscale-[0.05] contrast-[1.05]"
         />
         <div className="absolute inset-0 bg-[#331D19]/30"></div>
       </div>
